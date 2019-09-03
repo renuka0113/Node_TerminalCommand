@@ -8,3 +8,8 @@ module.exports.ls=()=>{
   console.log(filesToString);
  });
 };
+module.exports.mkdir = () => {
+  fs.mkdir('C:\Users\rally\Downloads\NODE\Node_TerminalCommand\touch.txt', { recursive: true }, (err) => {
+  if (err) throw err;
+});
+};
