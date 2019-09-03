@@ -9,7 +9,9 @@ module.exports.ls=()=>{
  });
 };
 module.exports.mkdir = () => {
-  fs.mkdir('C:\Users\rally\Downloads\NODE\Node_TerminalCommand\touch.txt', { recursive: true }, (err) => {
-  if (err) throw err;
+  fs.mkdir('C:/Users/rally/Downloads/NODE/Node_TerminalCommand/new_dir', { recursive: true }, (err) => {
+  if (err){
+    return console.log(`You have an error:  ${err}`);
+  }
 });
 };
